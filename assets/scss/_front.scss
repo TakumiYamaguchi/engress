@@ -290,32 +290,57 @@
      .strong_point__contents:last-of-type{
          margin-bottom: 93px;
      }
-     .plan{
-        position: relative;
-         .plan_txt{
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             text-align: center;
-             h3{
-                 font-size: 26px;
-                 color: #fff;
-                 font-weight: bold;
-                 margin-bottom: 23px;
-             }
-             .plan_btn{
-                max-width: 200px;
-                width: 100%;
-                border: 1px solid #fff;
-                background-color: initial;
-                border-radius: 30px;
-             }
-         }
-     }
  }   
 }
 ////#strong_point//////
+.plan{
+    position: relative;
+    img{
+        width: 100%;
+    }
+     .plan_txt{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         width: 100%;
+
+         h3{
+             font-size: 26px;
+             color: #fff;
+             font-weight: bold;
+             margin-bottom: 23px;
+             @media screen and(max-width: 1024px){
+                font-size: 24px;
+                @media screen and(max-width: 768px){
+                    @include fz_vw(14);
+                    margin-bottom: 3vw;
+                }
+            }
+
+         }
+         a{
+             @media screen and(max-width: 425px){
+                font-size: 10px;
+             }
+         }
+         .plan_btn{
+            max-width: 200px;
+            width: 100%;
+            border: 1px solid #fff;
+            background-color: initial;
+            border-radius: 30px;
+            @media screen and(max-width: 768px) {
+                padding: 2.4vw 3.4vw;
+                max-width: 25%;
+            }
+            @media screen and(max-width: 560px){
+                max-width: 31%;;
+            }
+         }
+     }
+ }
 
 #success_stories{
     background-color: $base;

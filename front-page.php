@@ -6,16 +6,16 @@ Template Name: トップページ
 <?php get_header(); ?>
 <main>
     <div id="main_visual">
-     <div class="main_img">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/top_mv.jpg" alt="TOEFLに最適化された無駄のないカリキュラム">  
-      <div class="main_txt__wrap">
-      <h2>TOEFL対策はEngress</h2>
-        <p>日本人へのTOEFL指導歴豊かな講師陣の<br>
-            コーチング型TOEFLスクール</p>
-        <a class="btn btn_contents" href="<?php echo home_url(); ?>">資料請求</a>
-        <a class="mv_contact" href="<?php echo home_url(); ?>">お問い合わせ</a>
+        <div class="main_img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/top_mv.jpg" alt="TOEFLに最適化された無駄のないカリキュラム">
+            <div class="main_txt__wrap">
+                <h2>TOEFL対策はEngress</h2>
+                <p>日本人へのTOEFL指導歴豊かな講師陣の<br>
+                    コーチング型TOEFLスクール</p>
+                <a class="btn btn_contents" href="<?php echo home_url(); ?>">資料請求</a>
+                <a class="mv_contact" href="<?php echo home_url(); ?>">お問い合わせ</a>
+            </div>
         </div>
-        </div> 
     </div>
     <!----#main_visual------>
     <div id="toefl_studies">
@@ -73,16 +73,17 @@ Template Name: トップページ
                 </div>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/engress_3.jpg" alt="平均3ヶ月でTOEFL iBT20点アップ">
             </div>
-            <div class="plan">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/price.jpg" alt="Engressの料金プラン">
-                <div class="plan_txt">
-                    <h3>Engressの料金プランはこちら</h3>
-                    <a class="btn plan_btn" href="<?php echo home_url(); ?>">料金を見てみる</a>
-                </div>
-            </div>
         </div>
     </div>
     <!--#strong_point-->
+    <div class="plan">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/price.jpg" alt="Engressの料金プラン">
+        <div class="plan_txt">
+            <h3>Engressの料金プランはこちら</h3>
+            <a class="btn plan_btn" href="<?php echo home_url(); ?>">料金を見てみる</a>
+        </div>
+    </div>
+    <!--plan-->
     <div id="success_stories">
         <div class="inner success_stories_inner">
             <h2>TOEFL成功事例</h2>
@@ -93,22 +94,22 @@ Template Name: トップページ
                     'post_per_page' => 3,
                 );
                 $the_query = new WP_Query($args);
-                if($the_query->have_posts()): ?>
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <div class="success_stories_contents">
-                    <p class="heading"><?php the_field('comment'); ?></p>
-                    <img src="<?php the_field('image'); ?>" alt="顔写真">
-                    <div class="status">
-                        <p class="profession"><?php the_field('occupation'); ?></p>
-                        <p class="name"><?php the_field('name'); ?></p>
-                    </div>
-                    <p class="score"><?php the_field('record'); ?></p>
-                </div>
-                <?php endwhile; ?>
+                if ($the_query->have_posts()) : ?>
+                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <div class="success_stories_contents">
+                            <p class="heading"><?php the_field('comment'); ?></p>
+                            <img src="<?php the_field('image'); ?>" alt="顔写真">
+                            <div class="status">
+                                <p class="profession"><?php the_field('occupation'); ?></p>
+                                <p class="name"><?php the_field('name'); ?></p>
+                            </div>
+                            <p class="score"><?php the_field('record'); ?></p>
+                        </div>
+                    <?php endwhile; ?>
                 <?php else : ?>
-            <p>投稿はありません。</p>
-        <?php endif; ?>
-            <?php wp_reset_postdata(); ?>
+                    <p>投稿はありません。</p>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
@@ -180,20 +181,20 @@ Template Name: トップページ
         <div class="inner contents_inner">
             <div class="blog_area">
                 <h2>ブログ</h2>
-                    <?php
-                    $blog_args = array (
-                        'post_type' => 'post',
-                        'posts_per_page' => 3,
-                        'orderby' => 'post_date',
-                    );
-                    $blog_query = new WP_Query($blog_args);
-                    ?>
-                    <?php if ($blog_query->have_posts() ) : ?>
-                        <?php while($blog_query->have_posts()) : $blog_query->the_post(); ?>
+                <?php
+                $blog_args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => 3,
+                    'orderby' => 'post_date',
+                );
+                $blog_query = new WP_Query($blog_args);
+                ?>
+                <?php if ($blog_query->have_posts()) : ?>
+                    <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
                         <article class="blog_content">
                             <div class="blog_img__wrap">
                                 <?php the_post_thumbnail('thumbnail', array('class' => 'blog_img')); ?>
-                                <a class="blog_content__link"href="<?php the_permalink(); ?>"></a>
+                                <a class="blog_content__link" href="<?php the_permalink(); ?>"></a>
                                 <p class="blog_category"><?php the_category(); ?></p>
                             </div>
                             <div class="blog_title_wrap">
@@ -204,39 +205,39 @@ Template Name: トップページ
                             </div>
                         </article>
                         <!--blog_content-->
-                        <?php endwhile;  ?>
+                    <?php endwhile;  ?>
                 <?php else :  ?>
-                <p class="blog__title">投稿が見つかりません。</p>
+                    <p class="blog__title">投稿が見つかりません。</p>
                 <?php endif; ?>
             </div>
             <!--blog_area-->
             <div class="info_area">
                 <h2>お知らせ</h2>
                 <?php
-                    $args = array(
-                        'post_type' => 'info',
-                        'posts_per_page' => 3,
-                    );
-                   $the_query = new WP_Query( $args );
-                   if( $the_query->have_posts() ):
-                    ?>
-                <?php while ($the_query->have_posts() ) : $the_query->the_post();?>     
-                <div class="info_content">
-                    <p class="info_date"><?php the_time('Y.m.d'); ?></p>
-                    <a class="info_title" href="<?php the_permalink(); ?>">
-                        <h3><?php the_title(); ?></h3>
-                    </a>
-                </div>
-                <!--info_content-->
-              <?php endwhile; ?>  
-                              <?php else :  ?>
-                <p class="blog__title">投稿が見つかりません。</p>
-             <?php endif; ?> 
+                $args = array(
+                    'post_type' => 'info',
+                    'posts_per_page' => 3,
+                );
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) :
+                ?>
+                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <div class="info_content">
+                            <p class="info_date"><?php the_time('Y.m.d'); ?></p>
+                            <a class="info_title" href="<?php the_permalink(); ?>">
+                                <h3><?php the_title(); ?></h3>
+                            </a>
+                        </div>
+                        <!--info_content-->
+                    <?php endwhile; ?>
+                <?php else :  ?>
+                    <p class="blog__title">投稿が見つかりません。</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
     <!--#blog_area-->
-<?php get_template_part('template/document_request');?>
+    <?php get_template_part('template/document_request'); ?>
     <script>
         Vue.component('js-accordion', {
             template: `
