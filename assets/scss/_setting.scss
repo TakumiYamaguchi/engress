@@ -255,4 +255,7 @@ textarea{
 h2{
   @include f(36,'',0);
   font-weight: bold;
+  @media screen and(max-width: 768px){
+    @include fz_vw(16);
+ }
 }

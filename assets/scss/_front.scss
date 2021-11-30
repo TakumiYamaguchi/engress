@@ -93,22 +93,46 @@
 #toefl_studies{
     background-color: $base;
     margin-top: -2px;
+    @media screen and(max-width: 1024px){
+        padding: 0 5vw;
+    }
     .toefl_studies__inner{
         color: #fff;
         text-align: center;
         padding: 63px 0 64px 0;
+        @media screen and(max-width: 768px){
+            padding: 8.3vw 0;
+        }
         h2{
             margin-bottom: 65px;
+            @media screen and(max-width: 768px){
+                margin-bottom: 8vw;
+             }
         }
         ul{
             display: flex;
             justify-content: center;
             margin-bottom: 80px;
+            @media screen and(max-width: 768px) {
+                margin-bottom: 8vw;
+            }
             li{
                 @include f(18,'',0);
                 font-weight: bold;
                 line-height: 2.16;
                 margin-right: 51px;
+                @media screen and(max-width: 768px){
+                    @include fz_vw(10);
+                    line-height: 1.75;
+                    margin-right: 10.3vw;
+                    br{
+                        display: none;
+                    }
+                    @media screen and(max-width: 425px){
+                        @include fz_vw(12);
+                        text-align: left;
+                    }
+                }
             }
             li:last-of-type{
                 margin-right: 0;
@@ -118,14 +142,25 @@
             background-color: #fff;
             color: $base;
             padding: 16px;
+            @media screen and(max-width: 768px){
+                padding: 2.1vw;
+            }
             .about_engress__inner{
                 border: 5px solid $base;
+                @media screen and(max-width: 768px){
+                    border: 3px solid $base;
+                    padding: 2vw;
+                }
                 h3{
                     @include f(36,'',0);
                     font-weight: bold;
                     line-height: 1.38;
                     margin-bottom: 25px;
-                    padding-top: 16px
+                    padding-top: 16px;
+                    @media screen and(max-width: 768px){
+                        @include fz_vw(16);
+                        margin-bottom: 3.2vw;
+                    }
                 }
                 span{
                     background:linear-gradient(transparent 75%, $accent 0%);
@@ -134,6 +169,17 @@
                     @include f(18,'',0);
                     line-height: 1.72;
                     padding-bottom: 16px;
+                    @media screen and (max-width: 768px){
+                        font-size: 14px;
+                    }
+                    @media screen and(max-width: 515px){
+                        br{
+                            display: none;
+                        }
+                    }
+                    @media screen and(max-width: 425px){
+                        @include fz_vw(12);
+                    }
                 }
             }
         }
@@ -142,17 +188,35 @@
 /////////#toefl_studies////////////
 
 #strong_point{
+    @media screen and(max-width: 1024px){
+        padding: 0 5vw;
+    }
  .strong_point_inner{
      padding: 59px 0 39px;
      text-align: center;
+     @media screen and(max-width: 768px){
+        padding: 6.6vw 0;
+     }
      h2{
         margin-bottom: 59px;
+        @media screen and(max-width: 768px){
+            margin-bottom: 7.7vw;
+        }
      }
      .strong_point__contents{
          display: flex;
          margin-bottom: 60px;
+         @media screen and(max-width:768px){
+            flex-direction: column;
+            position: relative;
+            margin-bottom: 7.7vw;
+         }
         .contents_txt{
             margin-right: 50px;
+            @media screen and(max-width: 768px){
+                order: 1;
+                margin-right: 0px;
+            }
             .feature{
                 background-color: $accent;
                 color: #fff;
@@ -163,29 +227,64 @@
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 35px;
+                @media screen and(max-width: 768px){
+                    font-size: 14px;
+                    margin-bottom: 4.5vw;
+                    position: absolute;
+                    top: 0;
+                }
+                @media screen and(max-width: 425px){
+                    @include fz_vw(12);
+                }
             }
             h3{
                 @include f(26,'',0);
                 line-height: 1.5;
                 font-weight: bold;
                 margin-bottom: 39px;
+                text-align: left;
+                @media screen and(max-width: 768px){
+                    @include fz_vw(14);
+                    margin-bottom: 1.8vw;
+                    br{
+                        display: none;
+                    }
+                }
             }
             p{
                 @include f(16,'',0);
                 line-height: 1.68;
+                text-align: left;
+                @media screen and(max-width:768px){
+                    font-size: 14px;
+                }
+                @media screen and(max-width:425px){
+                    @include fz_vw(12);
+                }
             }
         }
         img{
             max-width: 350px;
             width: 100%;
+            @media screen and(max-width: 768px){
+                max-width: fit-content;
+                margin-bottom: 3vw;
+            }
         }
      }
 /////.strong_point__contents/////     
      .strong_point__contents:nth-of-type(2n){
         flex-direction: row-reverse;
+        @media screen and(max-width:768px){
+            flex-direction: column;
+            margin-bottom: 7.7vw;
+         }
         .contents_txt{
             margin-right: 0;
             margin-left: 50px;
+            @media screen and(max-width:768px){
+                margin-left: 0px;
+             }
         }
      }
      .strong_point__contents:last-of-type{
