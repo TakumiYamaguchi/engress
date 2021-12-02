@@ -147,27 +147,27 @@ Template Name: トップページ
             <h2>よくある質問</h2>
             <div id="app">
                 <js-accordion>
-                    <div slot="title">Engressはサラリーマンでも学習を続けられるでしょうか？</div>
+                    <div slot="title"><p>Engressはサラリーマンでも学習を続けられるでしょうか？</p></div>
                     <div class="js-accordion--body" slot="body">
                         <p>Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
                     </div>
                 </js-accordion>
                 <js-accordion>
-                    <div slot="title">教材はオリジナルのものを使用しているのでしょうか？</div>
+                    <div slot="title"><p>教材はオリジナルのものを使用しているのでしょうか？</p></div>
                     <div class="js-accordion--body" slot="body">
                         <p class="answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_+.jpg" alt="+アイコン">
                 </js-accordion>
                 <js-accordion>
-                    <div slot="title">講師に日本人はいますか？</div>
+                    <div slot="title"><p>講師に日本人はいますか？</p></div>
                     <div class="js-accordion--body" slot="body">
                         <p class="answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_+.jpg" alt="+アイコン">
                 </js-accordion>
                 <js-accordion>
-                    <div slot="title">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</div>
+                    <div slot="title"><p>TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</p></div>
                     <div class="js-accordion--body" slot="body">
                         <p class="answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
                     </div>
