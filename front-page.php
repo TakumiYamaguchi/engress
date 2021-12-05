@@ -20,7 +20,7 @@ Template Name: トップページ
     <!----#main_visual------>
     <div id="toefl_studies">
         <div class="inner toefl_studies__inner">
-            <h2>TOEFL学習でこんな悩みありませんか？</h2>
+            <h2>TOEFL学習で<br>こんな悩みありませんか？</h2>
             <ul>
                 <li>勉強の習慣が<br>
                     身についていない</li>
@@ -43,7 +43,7 @@ Template Name: トップページ
     <!--#toefl_studies__inner-->
     <div id="strong_point">
         <div class="inner strong_point_inner">
-            <h2>TOEFL対策に特化したEngress3つの強み</h2>
+            <h2>TOEFL対策に特化した<br>Engress3つの強み</h2>
             <div class="strong_point__contents">
                 <div class="contents_txt">
                     <p class="feature">特長 １</p>
@@ -120,7 +120,7 @@ Template Name: トップページ
             <ol>
                 <li>
                     <p class="num">01</p>
-                    <h3>お問い合わせ</h3>
+                    <h3>お問い<br>合わせ</h3>
                     <p class="explanation">まずはフォームまたはお電話からお申し込みください。</p>
                 </li>
                 <li>

@@ -4,17 +4,30 @@ footer{
         display: flex;
         justify-content: space-between;
         padding: 35px 177px 68px 191px;
+        @media screen and(max-width: 1024px){
+            padding: 3.4vw 12px;
+            flex-direction: column;
+        }
     }
     .footer_left{
         nav{
             ul{
                 display: flex;
+                @media screen and(max-width: 1023px) {
+                    margin-bottom: 16px;
+                }
                 li{
                     a{
                         color: #fff;
                         position: relative;
                         font-weight: bold;
                         padding: 0 21px;
+                        @media screen and(max-width: 768px){
+                            padding: 0 2.6vw;
+                        }
+                        @media screen and(max-width: 375px){
+                            @include fz_vw(16)
+                        }
                     }
                     a::after{
                         position: absolute;
@@ -36,17 +49,26 @@ footer{
                         display: none;
                     }
                 }
+                @media screen and(max-width:768px){
+                    margin-bottom: 16px;
+                }
             }
         }
     }
-//////////heaedr_left///////////////
+//////////footer_left///////////////
 .footer_right{
     img{
         width: 197px;
         margin-bottom: 26px;
+        @media screen and(max-width: 1023px){
+            margin-bottom: 16px;
+        }
     }
     .tel_wrap{
         text-align: end;
+        @media screen and(max-width: 1023px) {
+            text-align: left;
+        }
        p{
             color: #fff;
         }
@@ -67,6 +89,10 @@ footer{
         padding: 12px 178px 11px 0;
         @include f(12,'',0);
         font-weight: bold;
+        @media screen and(max-width: 1023px) {
+            padding: 12px 0;
+            text-align: center;
+        }
     }
 } 
 }

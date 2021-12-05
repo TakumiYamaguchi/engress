@@ -207,7 +207,7 @@ textarea{
     border-radius: 3px;
     color: #fff;
     background-color: $base;
-    @include f(14,$ff,0);
+    @include f(16,$ff,0);
     border-radius: 5px;
     font-weight: bold;
 }
@@ -256,6 +256,10 @@ h2{
   @include f(36,'',0);
   font-weight: bold;
   @media screen and(max-width: 768px){
-    @include fz_vw(16);
+    @include fz_vw(18);
+    line-height: 1.5;
+    @media screen and(max-width: 375px) {
+      @include fz_vw(18)
+    }
  }
 }
