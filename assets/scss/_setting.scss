@@ -200,7 +200,7 @@ textarea{
   display: inline-block;
     width: 142px;
     max-width: 100%;
-    padding: 19px 26px;
+    padding: 19px 0;
     // border: 1px solid $accent;
     text-align: center;
     position: relative;
@@ -250,6 +250,10 @@ textarea{
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
+  @media screen and(max-width: 1023px) {
+    padding: 0 12px;
+  }
 }
 
 h2{
@@ -262,4 +266,17 @@ h2{
       @include fz_vw(18)
     }
  }
+}
+
+.lower_page__h2{
+  @include f(32,'',0);
+  // font-weight: bold;
+  color: #fff;
+  @media screen and(max-width: 768px){
+      @include fz_vw(18);
+      line-height: 1.5;
+      @media screen and(max-width: 375px) {
+        @include fz_vw(18)
+      }
+   }
 }

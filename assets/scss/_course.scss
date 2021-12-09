@@ -1,0 +1,140 @@
+#main_img {
+    .main_img__inner {
+        position: relative;
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include f(32, "", 0);
+            // font-weight: bold;
+            color: #fff;
+            @media screen and(max-width: 768px) {
+                @include fz_vw(18);
+                line-height: 1.5;
+                @media screen and(max-width: 375px) {
+                    @include fz_vw(18);
+                }
+            }
+        }
+    }
+}
+///////#main_img///////
+
+#fee_structure {
+    padding: 58px 0 90px;
+    .fee_structure__inner {
+        text-align: center;
+        h2 {
+            margin-bottom: 60px;
+        }
+        .fee_structure_btn__wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 45px;
+            a {
+                max-width: 280px;
+                width: 100%;
+                padding: 34px 0;
+                background-color: $base;
+                color: #fff;
+                @include f(22, "", 0);
+                font-weight: bold;
+                margin-right: 32px;
+            }
+            p {
+                font-size: 29px;
+                margin-right: 32px;
+            }
+            a:last-of-type {
+                margin-right: 0;
+            }
+        }
+        .fee_structure_text {
+            text-align: left;
+            line-height: 1.68;
+        }
+    }
+}
+///////#fee_structure///////
+
+#price_list {
+    padding-bottom: 62px;
+    .price_list__inner {
+        text-align: center;
+        .course_price__h2 {
+            margin-bottom: 106px;
+        }
+        .price_list__contents {
+            .plan {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                .plan_list {
+                    border: 1px solid $base;
+                    max-width: 220px;
+                    width: 100%;
+                    margin-right: 7px;
+                    span{
+                        display: block;
+                        margin: -32px -1px -26px;
+                        padding: 23px 0 20px;
+                        background-color: #f5a623;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                    
+                    h3{
+                        padding: 17px 0 18px;
+                        background: #1b224c;
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                    .price_list__inner{
+                        padding: 30px 0 0;
+                        margin: 0 22px;
+                        h4{
+                            @include f(25,'',0);
+                            font-weight: bold;
+                            margin-bottom: 14px;
+                        }
+                        .monthly{
+                            margin-bottom: 51px;
+                        }
+                    .price_list__li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                        img {
+                            max-width: 14px;
+                            height: 100%;
+                            margin-right: 11px;
+                        }
+                        p{
+                            line-height: 1.68;
+                        }
+                    }
+                    .price_list__li:last-of-type{
+                        margin-bottom: 91px;
+                    }
+                }
+                }
+                .plan_list:nth-of-type(3){
+                    border-top: none;
+                    h3{
+                        background: $accent;
+                        margin: 0 -1px;
+                    }
+                    h4{
+                        color: $accent;
+                    }
+                }
+                .plan_list:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

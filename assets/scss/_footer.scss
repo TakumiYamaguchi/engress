@@ -13,10 +13,14 @@ footer{
         nav{
             ul{
                 display: flex;
+
                 @media screen and(max-width: 1023px) {
                     margin-bottom: 16px;
                 }
                 li{
+                    list-style-type: none;
+                    // background-color: #fff;
+                    color: #000;
                     a{
                         color: #fff;
                         position: relative;
@@ -29,26 +33,29 @@ footer{
                             @include fz_vw(16)
                         }
                     }
-                    a::after{
-                        position: absolute;
-                        content: "";
-                        width: 1px;
-                        background-color: #fff;
-                        height: 100%;
-                        margin: 0 21px;
+                    // a::after{
+                    //     position: absolute;
+                    //     content: "";
+                    //     width: 1px;
+                    //     background-color: #fff;
+                    //     height: 100%;
+                    //     margin: 0 21px;
 
-                    }
+                    // }
+                }
+                li + li{
+                    border-left: 1px solid #fff;
                 }
                 li:first-of-type{
                     a{
                         padding-left: 0;
                     }
                 }
-                li:last-of-type{
-                    a::after{
-                        display: none;
-                    }
-                }
+                // li:last-of-type{
+                //     a::after{
+                //         display: none;
+                //     }
+                // }
                 @media screen and(max-width:768px){
                     margin-bottom: 16px;
                 }
