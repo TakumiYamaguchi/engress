@@ -1,0 +1,126 @@
+#blog_single {
+    .blog_single__inner {
+        display: flex;
+        margin-top: 60px;
+        .article_main {
+            margin-right: 36px;
+            article {
+                margin-bottom: 60px;
+                .blog-detail__title{
+                    margin-bottom: 20px;
+                }
+                ul {
+                    li {
+                        a {
+                            background-color: $base;
+                            color: #fff;
+                            @include f(12, "", 0);
+                            padding: 9px 25px;
+                            margin-bottom: 40px;
+                            display: inline-block;
+                        }
+                    }
+                }
+                .sns{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .blog-detail__image{
+                    margin-bottom: 40px;
+                }
+                .blog-content{
+                    @include f(16,'',0);
+                    line-height: 1.5;
+                    @media screen and(max-width: 375px) {
+                        @include fz_vw(16)
+                    }
+                }
+            }
+            .recommend_article{
+                margin-bottom: 60px;
+                h2{
+                    @include f(26,'',0);
+                    font-weight: bold;
+                    color: $base;
+                    margin-bottom: 30px;
+                    line-height: 1.5;
+                }
+                article{
+                    display: flex;
+                    .blog_img__wrap{
+                        position: relative;
+                        max-width: 240px;
+                        width: 100%;
+                        margin-right: 32px;
+                        ul{
+                            li{
+                                a{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: $base;
+                                    color: #fff;
+                                    padding: 8px 13px;
+                                    @include f(12,'',0);
+                                }
+                            }
+                        }
+                    }
+                    .blog_date{
+                        margin-bottom: 29px;
+                    }
+                    h3{
+                        @include f(18,'',0);
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                }
+                article:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .side {
+        max-width: 269px;
+        width: 100%;
+        .side_wrap{
+            .related_article{
+                margin-bottom: 49px;
+                .side_heading{
+                    @include f(21,'',0);
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: $base;
+                    padding:18px 0;
+                    text-align: center;
+                    border: 1px solid #707070;
+                    margin-bottom: 30px;
+                }
+                article{
+                    display: flex;
+                }
+                .blog_img{
+                    position: relative;
+                    max-width: 100px;
+                    width: 100%;
+                    height: 70px;
+                    margin-right: 17px;
+                }
+                .category_li{
+                    @include f(16,'',0);
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                }
+                .category_li:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+            .related_article:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}

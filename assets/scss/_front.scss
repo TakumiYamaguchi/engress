@@ -747,11 +747,13 @@
                 .blog_img__wrap {
                     position: relative;
                     margin-right: 20px;
+                    
                     @media screen and(max-width: 700px) {
                         margin-right: 2.9vw;
                     }
-                    .blog_thumbnail {
+                    img{
                         max-width: 150px;
+                        height: 150px;
                         width: 100%;
                     }
                     .post-categories {

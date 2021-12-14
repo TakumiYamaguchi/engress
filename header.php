@@ -18,6 +18,7 @@
 		<?php wp_body_open(); ?>
 		<div id="page" class="site">
 			<header id="header" class="site-header">
+				<div class="header__inner">
 				<div class="header_left">
 					<h1><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="engressロゴ"></h1>
 					<nav class="header_nav">
@@ -52,7 +53,7 @@
 					<transition name="menu">
 						<div class="menu" v-show="ActiveBtn">
 							<ul>
-							<li><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="engressロゴ"></li>
+								<li><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="engressロゴ"></li>
 
 								<li><a href="<?php echo home_url(); ?>/front">ホーム</a></li>
 								<li><a href="<?php echo home_url(); ?>/info">お知らせ</a></li>
@@ -66,6 +67,8 @@
 						</div>
 					</transition>
 				</div>
+
+				</div>
 				<script>
 					var app = new Vue({
 						el: '#app_sp',
@@ -74,4 +77,5 @@
 						}
 					})
 				</script>
+
 			</header><!-- #masthead -->
