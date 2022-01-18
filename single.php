@@ -31,8 +31,9 @@ Template Name:blog記事ページ
 					<h2>おすすめ記事</h2>
 					<?php
 					$blog_args = array(
+						'category_name' => 'pick-up',
 						'post_type' => 'post',
-						'posts_per_page' => 3,
+						'posts_per_page' => 4,
 						'orderby' => 'post_date',
 					);
 					$blog_query = new WP_Query($blog_args);
@@ -99,18 +100,18 @@ Template Name:blog記事ページ
 					</div>
 					<div class="related_article">
 						<h3 class="side_heading">カテゴリー</h3>
-						<?php
-						$categories = get_categories();
-						foreach ($categories as $category) :
-						?>
-						<ul></ul>
-							<li class="category_li">・<?php echo $category->name; ?>							
-							<a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
-					</a>
-					</li>
-					</ul>
+						<ul>
+							<?php
+							$categories = get_categories();
+							foreach ($categories as $category) :
+							?>
 
-						<?php endforeach; ?>
+								<a class="category_link" href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+									<li>・<?php echo $category->name; ?></li>
+								</a>
+							<?php endforeach; ?>
+
+						</ul>
 					</div>
 				</div>
 			</div>
