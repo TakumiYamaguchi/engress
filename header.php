@@ -40,7 +40,7 @@
 						<p class="tel_num">0123-456-7890</p>
 					</div>
 					<a class="btn btn_document" href="<?php echo home_url(); ?>">資料請求</a>
-					<a class="btn" href="<?php echo home_url(); ?>">お問い合わせ</a>
+					<a class="btn" href="<?php echo home_url(); ?>/contact">お問い合わせ</a>
 				</div>
 				<div id="app_sp">
 					<!--ハンバーガーメニューのボタン-->
@@ -62,7 +62,7 @@
 							</ul>
 							<div class="sp_nav__btn">
 								<a class="btn btn_document" href="<?php echo home_url(); ?>">資料請求</a>
-								<a class="btn" href="<?php echo home_url(); ?>">お問い合わせ</a>
+								<a class="btn" href="<?php echo home_url(); ?>/contact">お問い合わせ</a>
 							</div>
 						</div>
 					</transition>

@@ -10,13 +10,13 @@
             // font-weight: bold;
             color: #fff;
             @media screen and(max-width: 768px) {
-                @include fz_vw(20);
-                line-height: 1.5;
-                @media screen and(max-width: 375px) {
-                    font-size: 20px;
-                }
+                @include f(20, "", 0);
+                line-height: 1.68;
+                // @media screen and(max-width: 375px) {
+                //     font-size: 20px;
+                // }
             }
-        }
+         }
     }
 }
 ///////#main_img///////

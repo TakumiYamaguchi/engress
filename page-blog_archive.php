@@ -23,7 +23,7 @@ Template Name:blog記事一覧ページ
                 <?php
                 $blog_args = array(
                     'post_type' => 'post',
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 5,
                     'orderby' => 'post_date'
                 );
                 $blog_query = new WP_Query($blog_args);
