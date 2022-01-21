@@ -25,6 +25,9 @@
     }
 }
 ///////#main_img///////
+
+
+
 #contact {
     .contact_inner {
         max-width: 700px;
@@ -129,7 +132,7 @@
             label{
                 display: flex;
                 justify-content: center;
-                // margin-bottom: 48px;
+                margin-bottom: 48px;
                 // align-items: center;
                 @media screen and(max-width: 768px) {
                     margin-bottom: 6.2vw;
@@ -144,7 +147,9 @@
                     }
                 }
             }
-
+            .btn_wrap{
+                display: flex;
+                justify-content: center;
                 .button{
                     background-color: $base;
                     border: 1px solid $base;
@@ -159,8 +164,18 @@
                         @include fz_vw(16)
                     }
                 }
-            
-
+                .back_btn{
+                    margin-right: 20px;
+                }
+            }
+        }
+        .mw_wp_form_confirm{
+            .policy {
+                display: none;
+            }
+            p{
+                display: none;
+            }
         }
     }
 }

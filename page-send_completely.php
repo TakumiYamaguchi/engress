@@ -16,7 +16,7 @@ Template Name: 送信完了画面
                 お問い合わせいただきありがとうございます<br>
                 内容を確認した後、担当者よりご連絡いたします
             </p>
-            <a href="<?php echo home_url(); ?>/front">ホームへ戻る</a>
+            <a href="<?php echo home_url(); ?>">ホームへ戻る</a>
         </div>
     </div>
 </main>
