@@ -23,10 +23,10 @@
 					<h1><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="engressロゴ"></h1>
 					<nav class="header_nav">
 						<ul>
-							<li><a href="<?php echo home_url(); ?>/front">ホーム</a></li>
+							<li><a href="<?php echo home_url(); ?>/">ホーム</a></li>
 							<li><a href="<?php echo home_url(); ?>/info">お知らせ</a></li>
-							<li><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
-							<li><a href="<?php echo home_url(); ?>/price">コース・料金</a></li>
+							<li><a href="<?php echo home_url(); ?>/blog_archive">ブログ</a></li>
+							<li><a href="<?php echo home_url(); ?>/course_price">コース・料金</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -55,13 +55,13 @@
 							<ul>
 								<li><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="engressロゴ"></li>
 
-								<li><a href="<?php echo home_url(); ?>/front">ホーム</a></li>
+								<li><a href="<?php echo home_url(); ?>/">ホーム</a></li>
 								<li><a href="<?php echo home_url(); ?>/info">お知らせ</a></li>
-								<li><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
-								<li><a href="<?php echo home_url(); ?>/price">コース・料金</a></li>
+								<li><a href="<?php echo home_url(); ?>/blog_archive">ブログ</a></li>
+								<li><a href="<?php echo home_url(); ?>/course_price">コース・料金</a></li>
 							</ul>
 							<div class="sp_nav__btn">
-								<a class="btn btn_document" href="<?php echo home_url(); ?>">資料請求</a>
+								<a class="btn btn_document" href="<?php echo home_url(); ?>/contact">資料請求</a>
 								<a class="btn" href="<?php echo home_url(); ?>/contact">お問い合わせ</a>
 							</div>
 						</div>

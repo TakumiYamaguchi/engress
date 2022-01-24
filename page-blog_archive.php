@@ -24,7 +24,8 @@ Template Name:blog記事一覧ページ
                 $blog_args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 5,
-                    'orderby' => 'post_date'
+                    'orderby' => 'post_date',
+                    'paged' => $paged,// 何ページ目を指定してサブクエリを取得する
                 );
                 $blog_query = new WP_Query($blog_args);
                 ?>
@@ -54,13 +55,17 @@ Template Name:blog記事一覧ページ
                             } else {
                             echo str_replace( '\n', '', strip_tags( $post->post_content ) );
                             }
-                            ?></p>
+                            wp_reset_postdata(); ?></p>
                     </div>
                 </article>
                 <?php endwhile; ?>
                 <?php else : ?>
                 <p class="blog__title">投稿が見つかりません。</p>
                 <?php endif; ?>
+                <div class="page_navi">
+            <?php if(function_exists('wp_pagenavi')) wp_pagenavi(array('query' => $blog_query));?>
+            <?php wp_reset_postdata(); ?>
+            </div>
             </div>
         </div>
     </div>

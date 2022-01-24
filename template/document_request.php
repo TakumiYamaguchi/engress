@@ -5,8 +5,8 @@
     </div>
     <div class="document_request__inner">
         <h2>まずは無料で資料請求から</h2>
-        <a class="btn btn_contents" href="<?php echo home_url(); ?>">資料請求</a>
-        <a class="mv_contact" href="<?php echo home_url(); ?>">お問い合わせ</a>
+        <a class="btn btn_contents" href="<?php echo home_url(); ?>/contact">資料請求</a>
+        <a class="mv_contact" href="<?php echo home_url(); ?>/contact">お問い合わせ</a>
     </div>
 </div>
     <div class="document_request__bottom">

@@ -829,3 +829,12 @@ add_filter( 'get_the_archive_title', function ($title) {
 }
   return $title;
 });
+
+// function change_pre_get_posts($query){
+//   if(!is_admin() && $query->is_main_query()){
+//     if(is_category()){
+//       $query->set('posts_per_page', 5);
+//     }
+//   }
+// }
+// add_action('pre_get_posts', 'change_pre_get_posts');

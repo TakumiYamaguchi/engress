@@ -9,10 +9,10 @@ Template Name: フッター
 	<div class="footer_left">
 		<nav>
 			<ul>
-				<li><a href="<?php echo home_url(); ?>/front">ホーム</a></li>
+				<li><a href="<?php echo home_url(); ?>/">ホーム</a></li>
 				<li><a href="<?php echo home_url(); ?>/info">お知らせ</a></li>
-				<li><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
-				<li><a href="<?php echo home_url(); ?>/price">コース・料金</a></li>
+				<li><a href="<?php echo home_url(); ?>/blog_archive">ブログ</a></li>
+				<li><a href="<?php echo home_url(); ?>/course_price">コース・料金</a></li>
 			</ul>
 		</nav>
 	</div>

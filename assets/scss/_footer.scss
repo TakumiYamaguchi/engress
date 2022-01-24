@@ -4,7 +4,7 @@ footer{
         display: flex;
         justify-content: space-between;
         padding: 35px 177px 68px 191px;
-        @media screen and(max-width: 1024px){
+        @media screen and(max-width: 1023px){
             padding: 3.4vw 12px;
             flex-direction: column;
         }
